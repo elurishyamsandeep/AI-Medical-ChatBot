@@ -91,15 +91,11 @@ This repository contains a Retrieval-Augmented Generation (RAG) AI medical chatb
 └── README.md             # This file
 ```
 
-## Contributing
-
-Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
- licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
 - [HuggingFace](https://huggingface.co/)
 - [LangChain](https://python.langchain.com/)
-- [Streamlit](https://streamlit.io/)
+- [Streamlit](https://streamlit.io/)  
 - [FAISS](https://github.com/facebookresearch/faiss)
 ```

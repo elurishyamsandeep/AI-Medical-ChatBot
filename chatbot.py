@@ -76,7 +76,7 @@ def main():
                 chain_type_kwargs={'prompt': set_custom_prompt(CUSTOM_PROMPT_TEMPLATE)}
             )
             
-            # Invoke the QA chain and display only the result text
+            # Invoke the QA chain and display only the result text only result with sources will displayed in chat 
             response = qa_chain.invoke({'query': user_prompt})
             result = response["result"]
             st.chat_message('assistant').markdown(result)

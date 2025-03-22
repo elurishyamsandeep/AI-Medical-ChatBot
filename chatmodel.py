@@ -4,7 +4,7 @@ from langchain.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 
 
-#phase 1
+#phase 1 the is first part 
 
 DATA_PATH = r"D:\gopractice\New folder\chatmodel\data"
 

@@ -26,7 +26,7 @@ DB_FAISS = r"D:\gopractice\New folder\chatmodel\vectorstore\db_fiass"
 custom_prompt_template="""
 use the pieces of information provided in the context to answer user's question 
 if you don't know the answer ,just say that you don't know ,don't try to make up an answer
-.Don't provide anything out of the given context
+.Don't provide anything out of the given context.
 
 Context:{context}
 Question:{question}
@@ -49,7 +49,7 @@ db=FAISS.load_local(DB_FAISS,embeeding_model,allow_dangerous_deserialization=Tru
 qa_chain = RetrievalQA.from_chain_type(
     llm=load_llm(huggingface_repoid),
     chain_type="stuff",
-    retriever=db.as_retriever(search_kwargs={'k': 3}),
+    retriever=db.as_retriever(search_kwargs={'k': 2}),
     return_source_documents=True,
     chain_type_kwargs={'prompt': custom_prompt}
 )
